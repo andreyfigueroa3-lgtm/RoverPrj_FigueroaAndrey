@@ -89,7 +89,7 @@ public class Rover {
         .format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss")));
     mandato.add(tipoMandato);
     mandato.add(exitoso ? "exitoso" : "no posible");
-
+   mandatosExitosos =  [ ["dd/MM/yyyy HH:mm:ss","exitoso"] ]
     if (exitoso) {
       mandatosExitosos.add(mandato);
     } else {
